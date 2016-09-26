@@ -1,0 +1,10 @@
+include ../search/search
+
+mixin navbar(links)
+	+b.navbar&attributes(attributes)
+		.container.flex-center-between
+			+e('nav').nav
+				each link in links
+					+e('a').nav__link(href="#" title="#") #{link}
+			+search
+

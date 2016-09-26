@@ -1,7 +1,12 @@
 include ../top-section/top-section
 include ../top-nav/top-nav
+include ../logo/logo
+include ../navbar/navbar
 
 mixin header()
 	+b('header').header&attributes(attributes)
-		+top-nav
+		+top-nav(getData('navItems'))
 		+top-section
+		.container
+			+logo
+		+navbar(getData('navItems'))

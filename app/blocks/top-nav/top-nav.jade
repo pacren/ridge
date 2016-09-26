@@ -1,5 +1,6 @@
 include ../social-icons/social-icons
-mixin top-nav()
+
+mixin top-nav(links)
 	+b.top-nav&attributes(attributes)
 		.top-nav__btn.nav_close.close
 			span
@@ -7,12 +8,7 @@ mixin top-nav()
 			span
 
 		+e.links
-			+e('a').link(title="#" href="#") HOME
-			+e('a').link(title="#" href="#") FEATURES
-			+e('a').link(title="#" href="#") Beauty
-			+e('a').link(title="#" href="#") TRAVEL
-			+e('a').link(title="#" href="#") Fashion
-			+e('a').link(title="#" href="#") LIFESTYLE
-			+e('a').link(title="#" href="#") Shop
+			each link in links
+				+e('a').link(title="#" href="#") #{link}
 
 		+social-icons
