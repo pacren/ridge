@@ -1,0 +1,38 @@
+head
+	meta(charset='utf-8')
+	meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimal-ui')
+	meta(http-equiv='X-UA-Compatible' content='IE=edge')
+	meta(name='imagetoolbar' content='no')
+	meta(name='msthemecompatible' content='no')
+	meta(name='cleartype' content='on')
+	meta(name='HandheldFriendly' content='True')
+
+	meta(name='format-detection' content='telephone=no')
+	meta(name='format-detection' content='address=no')
+
+	meta(name='google' value='notranslate')
+
+	link(rel="apple-touch-icon", sizes="180x180", href="/apple-touch-icon.png")
+	link(rel="icon", type="image/png", href="/favicon-32x32.png", sizes="32x32")
+	link(rel="icon", type="image/png", href="/favicon-16x16.png", sizes="16x16")
+	link(rel="manifest", href="/manifest.json")
+	link(rel="mask-icon", href="/safari-pinned-tab.svg", color="#5bd567")
+
+	meta(name="theme-color", content="#ffffff")
+
+	meta(name='application-name' content=pageTitle || '')
+	meta(name='msapplication-tooltip' content=pageDescription || '')
+
+	//- http://realfavicongenerator.net/faq#why_ico_not_declared
+
+	block head
+	title= pageTitle || ''
+	meta(name='description' content=pageDescription || '')
+	meta(name='keywords' content=pageKeywords || '')
+
+	script(type='text/javascript').
+		!function(){"use strict";function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))c(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(c(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var a=document.createElement("link");a.href=o,a.rel="stylesheet",a.type="text/css",document.getElementsByTagName("head")[0].appendChild(a),document.cookie="font_css_cache"}}function c(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="/font.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();
+	noscript
+		link(rel='stylesheet', href='/font.css')
+
+	link(href='/assets/styles/app.min.css' rel='stylesheet')
