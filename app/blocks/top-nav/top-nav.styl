@@ -1,0 +1,85 @@
+.top-nav
+	position absolute
+	z-index 99
+	top 0
+	left 0
+	padding 70px 0 0 40px
+	display block
+	background-color #272727
+	transition transform .3s ease-in-out
+	transform translateX(-100%)
+	size 300px 100%
+	&.is-open
+		transform translateX(0)
+	&__links
+		font-size 17px
+		text-transform uppercase
+		font-weight bold
+	&__link
+		margin-bottom 20px
+		display block
+		color #9c9c9c
+	&__btn
+		position absolute
+		top 12px
+		left 0
+		cursor pointer
+		size 17px 13px
+		&.close
+			top 25px
+			right 25px
+			left auto
+			span
+				background-color #9c9c9c
+				&:nth-child(2)
+					opacity 0
+				&:nth-child(3)
+					bottom 6px
+					transform rotate(-45deg)
+				&:nth-child(1)
+					top 4px
+					transform rotate(45deg)
+		&:hover
+			span
+				background-color #26adec
+		&:active
+			span
+				background-color #ec2626
+
+		span
+			position absolute
+			left 0
+			display block
+			background #000
+			transition .15s ease-out
+			size 100% 3px
+			&:nth-child(1)
+				top 0
+			&:nth-child(2)
+				top 5px
+			&:nth-child(3)
+				bottom 0
+
+	&__links
+		margin-bottom 30px
+	.social-icons
+		display flex
+		a
+			margin-right 10px
+			margin-left 0
+			display flex
+			border 1px solid #9c9c9c
+			border-radius 50%
+			size 30px
+			&:hover
+				border-color #26adec
+				svg
+					fill #26adec
+			&:active
+				border-color #ec2626
+				svg
+					fill #ec2626
+		svg
+			size 16px 12px
+			fill #9c9c9c
+			margin auto

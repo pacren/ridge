@@ -1,5 +1,7 @@
 include ../top-section/top-section
+include ../top-nav/top-nav
 
 mixin header()
 	+b('header').header&attributes(attributes)
+		+top-nav
 		+top-section
