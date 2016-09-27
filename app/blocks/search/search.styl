@@ -1,2 +1,64 @@
 .search
-	display block
+	position absolute
+	right 0
+	height 100%
+	&__button
+		display none
+	&__open
+	&__button
+		top 0
+		left 0
+		padding 10px 0 5px 5px
+		cursor pointer
+		background-color transparent
+		border none
+		&:hover
+			svg
+				fill #26adec
+		&:active
+			svg
+				fill #ec2626
+		svg
+			transition .15s ease-out
+			transform rotate(-15deg)
+			size 20px
+			fill #fff
+	&__input
+		width 0
+		height 33px
+		font-size 18px
+		color #fff
+		background-color transparent
+		border none
+		transition width .45s ease-in
+		&.active
+			padding-left 15px
+			width 60vw
+	.top-nav__btn.close
+		top 20px
+		right 0
+		display none
+		&:hover
+			span
+				background-color #26adec
+		span
+			background-color #fff
+
+	&__drop
+		position absolute
+		top 100%
+		left 0
+		padding 15px 20px 5px
+		display none
+		width 100%
+		color #fff
+		background-color #1b1b1b
+		&__item
+			margin-bottom 15px
+			display flex
+			font-size 14px
+			color #fff
+			&__img
+				margin-right 10px
+
+
