@@ -30,10 +30,15 @@
 		color #fff
 		background-color transparent
 		border none
-		transition width .45s ease-in
+		transition .45s ease-in
 		&.active
 			padding-left 15px
-			width 60vw
+			width 20vw
+			+below(1400px)
+				width 60vw
+			+below(500px)
+				width 80vw
+
 	.top-nav__btn.close
 		top 20px
 		right 0

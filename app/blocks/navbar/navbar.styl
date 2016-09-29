@@ -16,6 +16,8 @@
 			text-transform uppercase
 			color #fff
 			transition transform .6s, color .15s ease-out
+			+below(750px)
+				display none
 			&.is-hide
 				transform scale(0) translateX(-100%)
 				&:nth-child(1)
