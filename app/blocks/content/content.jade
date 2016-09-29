@@ -1,0 +1,6 @@
+include ../imposts/imposts
+
+mixin content()
+	+b.content&attributes(attributes)
+		.container
+			+imposts(getData('imposts'))

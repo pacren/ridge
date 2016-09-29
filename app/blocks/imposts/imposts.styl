@@ -1,0 +1,57 @@
+.imposts
+	margin-bottom 60px
+	height 520px
+	+below(1000px)
+		flex-direction column
+		align-items center
+	&__col
+		width 27%
+		height 100%
+		&:nth-child(2)
+			margin 0 5px
+			width 45%
+			+below(1000px)
+				width 80%
+				order -1
+	&__item
+		position relative
+		margin-bottom 5px
+		display block
+		overflow hidden
+		size 100% 49.5%
+		&:hover
+			.imposts__item__img
+				transform scale(1.1)
+		&.big
+			size 100%
+			.imposts__item__title
+				font-size 26px
+				line-height 31px
+		&__img
+			transition transform .8s ease-in-out
+			size 100%
+			object-fit cover
+		&__content
+			position absolute
+			top 0
+			left 0
+			background-image linear-gradient(to top, rgba(1, 1, 1, .66) 0, rgba(0, 0, 0, .55) 17%, rgba(0, 0, 0, .25) 26%, rgba(0, 0, 0, .23) 27%, transparent 37%, transparent 100%)
+			size 100%
+		&__label
+			position absolute
+			top -40px
+			left 0
+			padding 0 10px
+			font-size 11px
+			line-height 1.7
+			letter-spacing 1.5px
+			text-transform uppercase
+			background-color #d71978
+		&__title
+			position absolute
+			left 20px
+			bottom 22px
+			width 90%
+			font-size 17px
+			line-height 22px
+			color #fff
