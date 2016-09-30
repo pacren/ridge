@@ -1,5 +1,5 @@
 .top-nav
-	position absolute
+	position fixed
 	z-index 99
 	top 0
 	left 0
@@ -19,6 +19,15 @@
 		margin-bottom 20px
 		display block
 		color #9c9c9c
+		cursor pointer
+		&:hover
+			.top-nav__link__dropdown
+				display block
+		&__dropdown
+			display none
+			padding 20px 20px 0
+			.top-nav__link
+				margin-bottom 10px
 	&__btn
 		position absolute
 		top 12px

@@ -5,6 +5,15 @@ mixin navbar(links)
 		.container.flex-center-between
 			+e('nav').nav
 				each link in links
-					+e('a').nav__link(href="#" title="#") #{link}
+					if link == "Fashion"
+						+e.nav__link
+							| #{link}
+							+e.nav__link__dropdown
+								+e('a').nav__link(href="#" title="#") Paris style
+								+e('a').nav__link(href="#" title="#") Romero notes
+								+e('a').nav__link(href="#" title="#") Dayli fashion
+					else
+						+e('a').nav__link(href="#" title="#") #{link}
+
 			+search
 

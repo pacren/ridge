@@ -9,6 +9,14 @@ mixin top-nav(links)
 
 		+e.links
 			each link in links
-				+e('a').link(title="#" href="#") #{link}
+				if link == "Fashion"
+					+e.link
+						| #{link}
+						+e.link__dropdown
+							+e('a').link(href="#" title="#") Paris style
+							+e('a').link(href="#" title="#") Romero notes
+							+e('a').link(href="#" title="#") Dayli fashion
+				else
+					+e('a').link(title="#" href="#") #{link}
 
 		+social-icons
