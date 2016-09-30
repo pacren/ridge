@@ -1,6 +1,11 @@
 include ../imposts/imposts
+include ../main/main
+include ../aside/aside
 
 mixin content()
-	+b.content&attributes(attributes)
+	+b.page-content&attributes(attributes)
 		.container
 			+imposts(getData('imposts'))
+		.content.flex.container
+			+main
+			+aside
