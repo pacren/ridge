@@ -1,0 +1,9 @@
+include ../social-icons/social-icons
+
+mixin footer()
+	+b.footer&attributes(attributes)
+		.container
+			+e.bottom.flex-center-between
+				+social-icons
+				+e.logo RIDGE
+				+e.copy ©2016 Ridge Magazine, Inc. All Rights Reserved.

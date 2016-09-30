@@ -2,6 +2,7 @@ extends /blocks/layout-default/layout-default
 include /blocks/header/header
 include /blocks/navbar/navbar
 include /blocks/content/content
+include /blocks/footer/footer
 block head
 	- var pageTitle = 'CSSSR Project Template';
 
@@ -9,3 +10,4 @@ block content
 	+header
 	+navbar(getData('navItems'))
 	+content
+	+footer

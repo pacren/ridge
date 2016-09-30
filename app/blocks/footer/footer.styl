@@ -1,0 +1,38 @@
+.footer
+	display block
+	background-color #000
+	padding 0 20px
+	&__bottom
+		padding 2.5em 0
+		+below(750px)
+			padding 1em 0
+			flex-wrap wrap
+			justify-content center
+			& > *
+				margin 0 10px 15px
+	&__logo
+		font-size 40px
+		text-transform uppercase
+		color #fff
+	&__copy
+		font-size 13px
+		color #515151
+	.social-icons
+		display flex
+		a
+			margin-right 10px
+			margin-left 0
+			display flex
+			size 30px
+			&:hover
+				border-color #26adec
+				svg
+					fill #26adec
+			&:active
+				border-color #ec2626
+				svg
+					fill #ec2626
+		svg
+			size 16px 12px
+			fill #9c9c9c
+			margin auto
