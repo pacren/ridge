@@ -1,11 +1,15 @@
 include ../imposts/imposts
-include ../main/main
-include ../aside/aside
+include ../block-title/block-title
+include ../social-icons/social-icons
 
 mixin content()
 	+b.page-content&attributes(attributes)
 		.container
 			+imposts(getData('imposts'))
 		.content.flex.container
-			+main
-			+aside
+			.main
+				.tranding-posts
+					+block-title.red trending
+			.aside
+				.aside-social
+					+social-icons.flex-center-between
