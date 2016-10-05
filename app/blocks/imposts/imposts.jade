@@ -1,27 +1,12 @@
+include ./imposts_item
+
 mixin imposts(posts)
 	+b.imposts.flex-between-h&attributes(attributes)
 		+e.col
-			+e('a').item(href="#")
-				+e('img').item__img(src="assets/images/1.jpg", alt="")
-				+e.item__content
-					+e.item__title My Low-Cal Mango Colada Will Be Your Go-To Summer Sipper
-			+e('a').item(href="#")
-				+e('img').item__img(src="assets/images/2.jpg", alt="")
-				+e.item__content
-					+e.item__title Gigi Hadid Shares Her Top Secret to Wear Jeans Like Supermodel
+			+imposts_item(posts[0][0], posts[0][1])
+			+imposts_item(posts[1][0], posts[1][1])
 		+e.col
-			+e('a').item.big(href="#")
-				+e('img').item__img(src="assets/images/3.jpg", alt="")
-				+e.item__content
-					+e.item__title
-						+e.item__label exlusive
-						| Models, Meats & Major Stars: Angela Seacrest's Rio Diary
+			+imposts_item(posts[2][0], posts[2][1], true).big
 		+e.col
-			+e('a').item(href="#")
-				+e('img').item__img(src="assets/images/4.jpg", alt="")
-				+e.item__content
-					+e.item__title This Accessories Looks Great on Every Body Type
-			+e('a').item(href="#")
-				+e('img').item__img(src="assets/images/5.jpg", alt="")
-				+e.item__content
-					+e.item__title Ariana Grande Joins Nelly at Karlie Kloss's Birthday Party in the Hamptons
+			+imposts_item(posts[3][0], posts[3][1])
+			+imposts_item(posts[4][0], posts[4][1])

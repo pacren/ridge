@@ -5,7 +5,7 @@ mixin navbar(links)
 		.container.flex-center-between
 			+e('nav').nav
 				each link in links
-					if link == "Fashion"
+					if link === "Fashion"
 						+e.nav__link
 							| #{link}
 							+e.nav__link__dropdown

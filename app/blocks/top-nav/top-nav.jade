@@ -9,7 +9,7 @@ mixin top-nav(links)
 
 		+e.links
 			each link in links
-				if link == "Fashion"
+				if link === "Fashion"
 					+e.link
 						| #{link}
 						+e.link__dropdown
