@@ -1,0 +1,15 @@
+include ../icon/icon
+
+mixin post-preview(post)
+	+b('a').post-preview&attributes(attributes)(href="#" title="Read #{post.title}")
+		+e.img
+			img(src="#{post.img}", alt="")
+		+e.content
+			+e.title #{post.title}
+			+e.text #{post.text}
+			+e.meta
+				+e.author #{post.author}
+				+e.date #{post.date}
+				+e.comments
+					+icon('comments').comments__icon
+					| #{post.comments}
