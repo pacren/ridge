@@ -1,0 +1,10 @@
+include ../block-title/block-title
+include ../post-preview/post-preview
+
+mixin trending-posts(posts)
+	+b.trending-posts&attributes(attributes)
+		+block-title.red trending
+		+e.content.flex-between-h-wrap
+				each post in posts
+					+post-preview(post)
+

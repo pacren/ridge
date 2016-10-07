@@ -1,0 +1,28 @@
+.trending-posts
+	display block
+
+	&__content
+		position relative
+		padding-top 30px
+		&:before
+			position absolute
+			top 30px
+			left 50%
+			height 95%
+			content ''
+			border-left 1px solid #ededed
+		& .post-preview:not(:nth-child(1)):not(:nth-child(2))
+			margin-bottom 15px
+			padding-bottom 15px
+			@extends .flex-between-h
+			.post-preview__content
+				width 240px
+			.post-preview__text
+				display none
+			.post-preview__title
+				margin-bottom 15px
+				font-size 14px
+				line-height 20px
+			.post-preview__img
+				margin-bottom 0
+				size 104px 78px
