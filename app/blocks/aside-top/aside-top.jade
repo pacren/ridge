@@ -1,0 +1,7 @@
+mixin aside-top(posts)
+	+b.aside-top&attributes(attributes)
+		+block-title Top Posts
+		+e.box.flex-between-h-wrap
+			each post in posts
+				+post-preview(post).post-sm
+
