@@ -4,6 +4,7 @@ include ../trending-posts/trending-posts
 include ../latest/latest
 include ../banner/banner
 include ../recommend/recommend
+include ../aside-cats/aside-cats
 
 mixin content()
 	+b.page-content&attributes(attributes)
@@ -18,3 +19,4 @@ mixin content()
 					+social-icons.flex-center-between
 					+banner
 					+recommend
+					+aside-cats

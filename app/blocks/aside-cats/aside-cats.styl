@@ -1,0 +1,39 @@
+.aside-cats
+	display block
+	&__list
+		margin 0
+		padding-top 20px
+		list-style none
+	&__item
+		position relative
+		border-bottom  1px solid #ededed
+		padding-left 20px
+		&:after
+		&:before
+			position absolute
+			top 17px
+			left 0
+			content ''
+			transform rotate(45deg)
+			size 8px 2px
+			background-color #111
+		&:after
+			top 22px
+			transform rotate(-45deg)
+		a
+			font-size 16px
+			font-weight bold
+			line-height 40px
+		&:hover
+			.aside-cats__item__dropdown
+				a
+					line-height 25px
+					font-size 100%
+		&__dropdown
+			transition all .15s ease-in-out
+			overflow hidden
+			a
+				transition all .15s ease-in-out
+				font-size 0
+				display block
+				line-height 0

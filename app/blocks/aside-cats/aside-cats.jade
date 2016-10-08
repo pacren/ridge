@@ -1,0 +1,20 @@
+mixin aside-cats()
+	+b.aside-cats&attributes(attributes)
+		+block-title Categories
+		+e('ul').list
+			+e('li').item
+				a(href="#") Lifestyle
+			+e('li').item
+				a Fashion
+				+e.item__dropdown
+					a(href="#") Paris style
+					a(href="#") Dayli fashion
+					a(href="#") Videos
+			+e('li').item
+				a(href="#") Culture
+			+e('li').item
+				a(href="#") Travel
+			+e('li').item
+				a(href="#") Music
+			+e('li').item
+				a(href="#") Videos
