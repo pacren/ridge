@@ -2,29 +2,4 @@ include ../icon/icon
 
 mixin search()
 	+b('form').search.flex-center-v&attributes(attributes)
-		+e.open
-			+icon('search')
-		+e('button').button
-			+icon('search')
 		+e('input').input(type='search' name="search")
-		.top-nav__btn.search_close.close
-			span
-			span
-			span
-		+e.drop
-			+e('a').drop__item(href="#")
-				+e.drop__item__img
-					img(src="http://loremflickr.com/70/50", alt="#")
-				+e.drop__item__text
-					p We macOS Sierra adds new features that let you do more than ever with your Mac.
-			+e('a').drop__item(href="#")
-				+e.drop__item__img
-					img(src="http://loremflickr.com/70/50", alt="#")
-				+e.drop__item__text
-					p Stay in touch with your friends and family, and find out about the fun new Messages features in iOS 10.
-			+e('a').drop__item(href="#")
-				+e.drop__item__img
-					img(src="http://loremflickr.com/70/50", alt="#")
-				+e.drop__item__text
-					p We’re here to provide tips, tricks, and helpful information when you need it most. And if you have a question, we’re here to help with that too.
-
