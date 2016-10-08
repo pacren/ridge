@@ -1,0 +1,13 @@
+mixin recommend()
+	+b.recommend&attributes(attributes)
+		+block-title Recommended
+		+e.box.flex-between-h
+			+e('a').item(href="#")
+				+e.item__img
+					img(src="assets/images/a3.jpg", alt="")
+				+e.item__title How to Make Perfect Martini on Summer Island Vacation
+			+e('a').item(href="#")
+				+e.item__img
+					img(src="assets/images/a7.jpg", alt="")
+				+e.item__title Hundreds of Others Mourn Slain Jogger Karina Vetrano
+
