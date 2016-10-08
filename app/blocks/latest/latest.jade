@@ -1,0 +1,7 @@
+mixin latest(posts)
+	+b.latest&attributes(attributes)
+		+block-title.blue LATEST NEWS
+		+e.content.flex-between-h-wrap
+				each post in posts
+					+post-preview(post)
+		+e.load-more More Latest Stories

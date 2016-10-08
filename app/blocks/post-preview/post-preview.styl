@@ -26,11 +26,46 @@
 			flex-shrink 0
 			flex-basis 104px
 
+	.latest__content > &:nth-child(1)
+	.latest__content > &:nth-child(2)
+	.latest__content > &:nth-child(3)
+	&.post-line
+		width 100%
+		@extends .flex-between-h
+		+below(560px)
+			flex-wrap wrap
+		.post-preview__title
+			font-size 20px
+			line-height 27px
+		.post-preview__img
+			margin 0 24px 0 0
+			size 265px 199px
+			flex-grow 1
+			flex-shrink 0
+			flex-basis 265px
+			+below(560px)
+				size 100% auto
+				margin 0 0 20px 0
+
+	.latest__content > &:nth-child(4)
+	&.post-big
+		width 100%
+		.post-preview__title
+			font-size 28px
+			+below(560px)
+				font-size 18px
+		.post-preview__text
+			display none
+		.post-preview__img
+			max-height 500px
+			overflow hidden
+			img
+				height auto
 	&:hover
 		.post-preview__title
 			color #26adec
 		.post-preview__img
-			filter brightness(1) saturate(2)
+			filter saturate(1.4) contrast(1.2)
 	&__img
 		margin-bottom 25px
 		display block

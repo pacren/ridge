@@ -1,6 +1,7 @@
 include ../imposts/imposts
 include ../social-icons/social-icons
 include ../trending-posts/trending-posts
+include ../latest/latest
 
 mixin content()
 	+b.page-content&attributes(attributes)
@@ -9,6 +10,7 @@ mixin content()
 		.content.flex.container
 			.main
 				+trending-posts(getData('trendingPosts'))
+				+latest(getData('trendingPosts'))
 			.aside
 				.aside-social
 					+social-icons.flex-center-between

@@ -4,17 +4,18 @@
 	height 100%
 	background-color #1b1b1b
 	&:before
-		content ''
 		position absolute
-		left 5px
+		z-index 0
 		top 14px
+		left 5px
+		content ''
 		background url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxN3B4IiBoZWlnaHQ9IjE3cHgiIHZpZXdCb3g9IjAgMCAxNDMgMTg0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTM0LjczNCw5LjA1MyBDMTkuMTIsMTguMDY3IDcuOTUsMzIuNjI0IDMuMjg0LDUwLjAzOSBDLTEuMzgzLDY3LjQ1NCAxLjAxMyw4NS42NDUgMTAuMDI3LDEwMS4yNTkgQzIyLjA1LDEyMi4wODIgNDQuNDY4LDEzNS4wMTggNjguNTM1LDEzNS4wMTggQzc2LjEzNCwxMzUuMDE4IDgzLjY3NCwxMzMuNzEgOTAuODIyLDEzMS4yIEwxMjEuMTg2LDE4My43OTIgTDE0Mi44MzYsMTcxLjI5MiBMMTEyLjQ3NywxMTguNzA5IEMxMjIuNzMyLDEwOS45MzUgMTMwLjExNSw5OC4yOTggMTMzLjY4NCw4NC45NzkgQzEzOC4zNSw2Ny41NjQgMTM1Ljk1NCw0OS4zNzQgMTI2Ljk0LDMzLjc1OSBDMTE0LjkxOCwxMi45MzYgOTIuNDk5LDAgNjguNDMzLDAgQzU2LjY0NSwwIDQ0Ljk5MiwzLjEzIDM0LjczNCw5LjA1MyBMMzQuNzM0LDkuMDUzIFogTTEwNS4yOSw0Ni4yNTkgQzExMC45NjYsNTYuMDkgMTEyLjQ3NCw2Ny41NDQgMTA5LjUzNiw3OC41MDkgQzEwNi41OTgsODkuNDc0IDk5LjU2NSw5OC42MzkgODkuNzM0LDEwNC4zMTUgQzgzLjI3MiwxMDguMDQ2IDc1Ljk0MSwxMTAuMDE4IDY4LjUzNSwxMTAuMDE4IEM1My4zNzIsMTEwLjAxOCAzOS4yNDksMTAxLjg3MiAzMS42NzgsODguNzU5IEMyNi4wMDIsNzguOTI4IDI0LjQ5NCw2Ny40NzUgMjcuNDMzLDU2LjUwOSBDMzAuMzcxLDQ1LjU0NCAzNy40MDQsMzYuMzc5IDQ3LjIzNSwzMC43MDIgQzUzLjY5NiwyNi45NzIgNjEuMDI3LDI1IDY4LjQzMywyNSBDODMuNTk3LDI1IDk3LjcxOSwzMy4xNDYgMTA1LjI5LDQ2LjI1OSBMMTA1LjI5LDQ2LjI1OSBaIiBpZD0ic2VhcmNoIj48L3BhdGg+PC9zdmc+') no-repeat center
 		transition .15s ease-out
 		transform rotate(-15deg)
 		size 20px
 		fill #fff
-		z-index 0
 	&__input
+		z-index 1
 		width 30px
 		height 33px
 		font-size 18px
@@ -22,13 +23,13 @@
 		background-color transparent
 		border none
 		transition .45s ease-in
-		z-index 1
+		max-width 800px
 		&:focus
 		&:active
 		&.active
 			margin-right 40px
 			padding-left 30px
-			width 18vw
+			width 40vw
 			+below(1400px)
 				width 50vw
 			+below(500px)
