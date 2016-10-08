@@ -22,12 +22,18 @@
 		color #9c9c9c
 		&:hover
 			.top-nav__link__dropdown
-				display block
+				padding 20px 20px 0
+				.top-nav__link
+					margin-bottom 10px
+					font-size 100%
 		&__dropdown
-			padding 20px 20px 0
-			display none
+			transition all .3s ease-out
+			overflow hidden
 			.top-nav__link
-				margin-bottom 10px
+				transition all .3s ease-out
+				margin-bottom 0
+				font-size 0
+
 	&__btn
 		position absolute
 		top 12px
