@@ -2,6 +2,7 @@ include ../imposts/imposts
 include ../social-icons/social-icons
 include ../trending-posts/trending-posts
 include ../latest/latest
+include ../banner/banner
 
 mixin content()
 	+b.page-content&attributes(attributes)
@@ -14,3 +15,4 @@ mixin content()
 			.aside
 				.aside-social
 					+social-icons.flex-center-between
+					+banner
