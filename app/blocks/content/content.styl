@@ -9,6 +9,12 @@
 		flex-grow 1
 		flex-shrink 0
 		flex-basis 600px
+		+below(640px)
+			flex-basis initial
+			width 100%
 	.aside
 		padding-left 40px
 		size 340px auto
+		+below(640px)
+			width 100%
+			padding-left 0

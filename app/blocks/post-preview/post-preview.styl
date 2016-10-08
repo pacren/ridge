@@ -3,13 +3,16 @@
 	padding-bottom 30px
 	display block
 	border-bottom 1px solid #ededed
-	size 373px auto
+	size 47% auto
+	+below(560px)
+		width 100%
+	.trending-posts__content > &:not(:nth-child(1)):not(:nth-child(2))
 	&.post-sm
 		margin-bottom 15px
 		padding-bottom 15px
 		@extends .flex-between-h
 		.post-preview__content
-			width 240px
+			width 100%
 		.post-preview__text
 			display none
 		.post-preview__title
@@ -17,8 +20,11 @@
 			font-size 14px
 			line-height 20px
 		.post-preview__img
-			margin-bottom 0
+			margin 0 10px 0 0
 			size 104px 78px
+			flex-grow 1
+			flex-shrink 0
+			flex-basis 104px
 
 	&:hover
 		.post-preview__title
@@ -29,7 +35,7 @@
 		margin-bottom 25px
 		display block
 		transition .15s ease-out
-		size 100% 280px
+		size 100% auto
 		object-fit cover
 		img
 			size 100%
