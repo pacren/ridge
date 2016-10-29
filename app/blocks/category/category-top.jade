@@ -1,0 +1,6 @@
+mixin category-top(posts)
+	+b.category&attributes(attributes)
+		+e.content.flex-between-h-wrap
+				each post in posts
+					+post-preview(post)
+

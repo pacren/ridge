@@ -1,0 +1,29 @@
+include ../social-icons/social-icons
+include ../banner/banner
+include ../recommend/recommend
+include ../aside-cats/aside-cats
+include ../aside-top/aside-top
+include ../breadcrumbs/breadcrumbs
+include ../category/category
+include ../category/category-top
+
+mixin content-category()
+	+b.page-content&attributes(attributes)
+		.container
+			h1.content__category__title Fashion
+			.content__category__description
+				p Aenean sollicitudin, lorehis ale bibendum auctor, nisise elit consequat ipsum, necos sagittis sem nibh id elit. Duis seodio Igor amet nibh vulputate cursus a sit amet auris accum... faucibus in convallis dui. Vestibulum ac hendrerit ipsum, nec laoreet mi. Integer in dictum itae iaculis maximus. Vivamus convallis, quam mattis a
+				p Phasellus non us in risus aliquet faucibus in convallis dui. Vestibulum ac hendrerit ipsum, nec laoreet mi. Integer in dictum itae iaculis maximus. Vivamus convallis, quam mattis accumsan consectetur, purus sem consectetur enim, quis malesuada igula quam at lorem. Vestibulum consequat at justo eu rutrum. Curabitur eu massa rhoncus, cotur enim ut, aliquet ins quam. Suspendisse id feugiat arcu. Nullam ut gravida, tincidunt tortor sit amet, euismod elit.
+			+block-title.red TOP POSTS
+		.content.flex.container
+			.main
+				+category-top(getData('trendingPosts'))
+				+category(getData('trendingPosts'))
+			.aside
+				.aside-social
+					+banner
+					+recommend
+					+aside-cats
+					+aside-top(getData('trendingPosts'))
+					+social-icons.flex-center-between
+

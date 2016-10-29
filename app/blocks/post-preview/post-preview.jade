@@ -1,7 +1,7 @@
 include ../icon/icon
 
 mixin post-preview(post)
-	+b('a').post-preview&attributes(attributes)(href="#" title="Read #{post.title}")
+	+b('a').post-preview&attributes(attributes)(href="/post.html" title="Read #{post.title}")
 		+e.img
 			img(src="#{post.img}", alt="")
 		+e.content

@@ -1,0 +1,8 @@
+mixin category(posts)
+	+b.category&attributes(attributes)
+		+block-title.red LATEST POSTS
+		+e.content.flex-between-h-wrap
+				each post in posts
+					+post-preview(post)
+		.latest__load-more More Latest Stories
+
