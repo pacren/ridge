@@ -1,0 +1,21 @@
+include ../social-icons/social-icons
+include ../post/post
+include ../banner/banner
+include ../recommend/recommend
+include ../aside-cats/aside-cats
+include ../aside-top/aside-top
+include ../breadcrumbs/breadcrumbs
+
+mixin content-post()
+	+b.page-content&attributes(attributes)
+		.content.flex.container
+			.main
+				+breadcrumbs
+				+post
+			.aside
+				.aside-social
+					+social-icons.flex-center-between
+					+banner
+					+recommend
+					+aside-cats
+					+aside-top(getData('trendingPosts'))
