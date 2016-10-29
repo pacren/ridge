@@ -14,8 +14,10 @@ mixin content-post()
 				+post
 			.aside
 				.aside-social
-					+social-icons.flex-center-between
 					+banner
 					+recommend
 					+aside-cats
 					+aside-top(getData('trendingPosts'))
+					+social-icons.flex-center-between
+
+		script(src="//yastatic.net/share2/share.js")

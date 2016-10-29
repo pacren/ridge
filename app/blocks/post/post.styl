@@ -1,25 +1,30 @@
 .post
+	padding-top 10px
 	display block
 	&__title
 		margin-bottom 20px
 		font-size 38px
-		line-height 48px
+		line-height 1.3
 		color #111
-
+		+below(600px)
+			font-size 20px
 	&__meta
-		text-align right
+		.ya-share2__container_size_m .ya-share2__icon
+			size 35px
+		&__info
+			margin-y 15px
 		&__author
 			color #aaa
 			span
 				color #444
 		&__date
-			color #aaa
 			margin-x 10px
+			color #aaa
 		&__comments
 			color #444
 			&__icon
 				position relative
-				top 0px
+				top 0
 				margin-right 5px
 				size 14px 12px
 				fill #444
@@ -28,17 +33,17 @@
 		img
 			margin-y 30px
 			&.float-left
-				float left
 				margin-right 30px
+				float left
 				+below(500px)
-					float none
 					margin-right 0
-			&.float-right
-				float right
-				margin-left 30px
-				+below(500px)
 					float none
+			&.float-right
+				margin-left 30px
+				float right
+				+below(500px)
 					margin-left 0
+					float none
 		h3
 			margin-bottom 20px
 			font-size 25px
@@ -58,32 +63,40 @@
 			color #111
 			border-left 5px solid #ec2626
 
+	&__foot
+		padding-y 20px
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+		align-items center
+		.ya-share2
+			margin-y 15px
 	&__tags
-		margin-y 35px
+		margin-y 15px
 		&__title
-			background #000
+			margin-right 10px
 			padding 3px 10px
-			color white
 			font-size 11px
 			line-height 1
 			text-transform uppercase
-			margin-right 10px
+			color white
+			background #000
 		&__keys
-			color #ec2626
 			font-size 13px
 			font-weight 600
 			line-height 24px
+			color #ec2626
 
 	&__author
-		border-top 1px solid #ededed
-		border-bottom 1px solid #ededed
 		margin-bottom 30px
 		padding-y 50px
 		display flex
+		border-top 1px solid #ededed
+		border-bottom 1px solid #ededed
 		&__ava
-			size 100px
-			border-radius 50%
 			overflow hidden
+			border-radius 50%
+			size 100px
 			flex-shrink 0
 			object-fit cover
 			+below(500px)
@@ -91,15 +104,15 @@
 		&__info
 			padding-left 30px
 		&__name
-			color #111
+			margin-bottom 15px
 			font-size 18px
 			font-weight bold
 			line-height 24px
-			margin-bottom 15px
+			color #111
 		&__desc
-			color #4b4b4b
+			margin-bottom 10px
 			font-weight 14px
 			line-height 20px
-			margin-bottom 10px
+			color #4b4b4b
 		&__contacts
 			font-size 14px

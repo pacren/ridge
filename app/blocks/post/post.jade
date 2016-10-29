@@ -2,14 +2,16 @@ mixin post()
 	+b.post&attributes(attributes)
 		+e.head
 			+e.title How Do Brazilian Supermodels Get That Bombshell Hair? Adriana Lima and More
-		+e.meta
-			+e('span').meta__author
-				| by
-				span Amber Scott
-			+e('span').meta__date  Oct 12, 2016
-			+e('span').meta__comments
-				+icon('comments').meta__comments__icon
-				| 3
+		+e.meta.flex-between-h-wrap
+			span.ya-share2(data-services="vkontakte,facebook,gplus,twitter")
+			+e('span').meta__info
+				+e('span').meta__author
+					| by
+					span Amber Scott
+				+e('span').meta__date  Oct 12, 2016
+				+e('span').meta__comments
+					+icon('comments').meta__comments__icon
+					| 3
 		+e.content
 			img(src="https://placeimg.com/640/480/people", alt="text", width="100%")
 			p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt nisl leo, et ultricies turpis viverra eu. In issim nisi in eros, id faucibus velit eleifend eu. Vestibulum ipsum quam, interdum a enim nec, tempus sagittis orci. Nulla or vel ortor a pretium. Vestibulum mollis volutpat neque, eu ultrices arcu faucibus eget. Nulla ultricies ligula eu lobrtis ornare. Etiam nec rutrum metus, vel accumsan quam. Vestibulum sit amet placerat sapien. Nullam luctus vulputate iaculis. Aenean tristique tempor tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus.
@@ -35,10 +37,12 @@ mixin post()
 			p Quisque augue sapien, eleifend vitae porta non, finibus a nisl. Quisque nec nulla risus.In issim nisi in eros, id faucibus velit eleifend eu. Vestibulum ipsum quam, interdum a enim nec, tempus sagittis orci. Nulla or vel ortor a pretium. Vestibulum on mollis volutpat neque, eu ultrices arcu faucibus eget. Nulla ultricies ligula eu lobrtis ornare. Etiam nec rutrum metus, vel a accumsan quam. Vestibulum sit amet placerat sapien. Aenean tristique tempor ada fames ac ante ipsum primis in faucibus.
 
 			p Vestibulum ac hendrerit ipsum, nec laoreet mi. Integer in dictum itae iaculis maximus. Vivamus convallis, quam mattis an consectetur, purus sem consectetur enim, quis malesuada igula quam at lorem. Vestibulum consequat at justo eu rutrum. Curabitur eu massa rhoncus, cotur enim ut, aliquet ins quam. Suspendisse id feugiat arcu. Nullam ut gravida, , euismod elit.
-		+e.tags
-			+e('span').tags__title Tags
-			+e('span').tags__keys Fashion, Beauty, Style, Podium
 
+		+e.foot
+			+e.tags
+				+e('span').tags__title Tags
+				+e('span').tags__keys Fashion, Beauty, Style, Podium
+			.ya-share2(data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,evernote,pocket,viber,whatsapp,telegram" data-counter="")
 		+e.author
 			+e.author__ava
 				img(src="http://i.pravatar.cc/100", alt="")
