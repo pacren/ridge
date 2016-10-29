@@ -1,0 +1,10 @@
+mixin breadcrumbs()
+	+b.breadcrumbs&attributes(attributes)(itemscope, itemtype='http://schema.org/BreadcrumbList')
+		+e.link(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+			a(href='/', title='Home', itemprop='item')
+				span(itemprop='name') Home
+				meta(itemprop='position', content='0')
+		+e.link(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+			a(href='/', title='Fashion', itemprop='item')
+				span(itemprop='name') Fashion
+				meta(itemprop='position', content='1')
