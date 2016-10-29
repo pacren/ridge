@@ -1,0 +1,50 @@
+mixin post()
+	+b.post&attributes(attributes)
+		+e.head
+			+e.title How Do Brazilian Supermodels Get That Bombshell Hair? Adriana Lima and More
+		+e.meta
+			+e('span').meta__author
+				| by
+				span Amber Scott
+			+e('span').meta__date  Oct 12, 2016
+			+e('span').meta__comments
+				+icon('comments').meta__comments__icon
+				| 3
+		+e.content
+			img(src="https://placeimg.com/640/480/people", alt="text", width="100%")
+			p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt nisl leo, et ultricies turpis viverra eu. In issim nisi in eros, id faucibus velit eleifend eu. Vestibulum ipsum quam, interdum a enim nec, tempus sagittis orci. Nulla or vel ortor a pretium. Vestibulum mollis volutpat neque, eu ultrices arcu faucibus eget. Nulla ultricies ligula eu lobrtis ornare. Etiam nec rutrum metus, vel accumsan quam. Vestibulum sit amet placerat sapien. Nullam luctus vulputate iaculis. Aenean tristique tempor tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+			p Phasellus non us in risus aliquet faucibus in convallis dui. Vestibulum ac hendrerit ipsum, nec laoreet mi. Integer in dictum itae iaculis maximus. Vivamus convallis, quam mattis accumsan consectetur, purus sem consectetur enim, quis malesuada igula quam at lorem. Vestibulum consequat at justo eu rutrum. Curabitur eu massa rhoncus, cotur enim ut, aliquet ins quam. Suspendisse id feugiat arcu. Nullam ut gravida, tincidunt tortor sit amet, euismod elit.
+
+			blockquote If you are still looking for that one person who will change your life, take a look in the mirror. Create and don't waste your time.
+
+			p Vestibulum ipsum quam, interdum a enim nec, tempus sagittis orci. Nulla auctor vel ortor a pretium. Proin vitae fringilla elit. Vestibulum mollis volutpat neque, eu ultrices arcu faucibus eget. Nulla ultricies ligula eu lobortis rnare.
+
+			img.float-right(src="https://placeimg.com/640/480/animals", alt="text", width="350", height="320")
+
+			p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tidunt nisl leo, et ultricies turpis viverra eu. In dignissim nisi a eros, fauci bus velit eleifend eu. Vestibulum ipsum quam, inum a enim nec, on tempus sagittis orci. Nulla auctor tor a pretium.  Interdum et  the malesuada fames ac ante ipsum primis faucibus.
+
+			p Phasellus non us in risus aliquet faucibus  convallis dui. Velum ac hendrerit ipsum, aoreet mi. Integer dictum itae iaculis mas. Vivamus convallis, quam mattis accumsan consectetur, purus sem consectetur enim, quis malesuada igula quam ata lorem. Vesibu lum consequat at justo eu rutrum. Curabitur eu massa rhoncus, aliquet ins quam. Suspendisse id feugiat arcu.
+
+			h3 Pellentesque sed pretium enim. Integer rutrum, sit amet pretium erat orci eget elit.
+
+			p Aliquam erat volutpat. Nulla imperdiet nibh suscipit ultrices rhoncus. Morbi rhoncus, nunc vitae vulputate scelerue, dui at quam volutpat massa, id facilisis est sapien ac nisl. Fusce eu tempor augue. Nam luctus, lorem ac viverra sucipit, dui sem tempus lorem, in egestas neque lorem at felis. Proin cursus justo vitae odio viverra varius. Vestibulum sit a amet tortor on opus, tincidunt justo at, euismod sem. Sed eu sollicitudin magna. In hac habitasse platea dictumst.
+
+			img(src="https://placeimg.com/640/480/any", alt="text", width="100%")
+
+			p Quisque augue sapien, eleifend vitae porta non, finibus a nisl. Quisque nec nulla risus.In issim nisi in eros, id faucibus velit eleifend eu. Vestibulum ipsum quam, interdum a enim nec, tempus sagittis orci. Nulla or vel ortor a pretium. Vestibulum on mollis volutpat neque, eu ultrices arcu faucibus eget. Nulla ultricies ligula eu lobrtis ornare. Etiam nec rutrum metus, vel a accumsan quam. Vestibulum sit amet placerat sapien. Aenean tristique tempor ada fames ac ante ipsum primis in faucibus.
+
+			p Vestibulum ac hendrerit ipsum, nec laoreet mi. Integer in dictum itae iaculis maximus. Vivamus convallis, quam mattis an consectetur, purus sem consectetur enim, quis malesuada igula quam at lorem. Vestibulum consequat at justo eu rutrum. Curabitur eu massa rhoncus, cotur enim ut, aliquet ins quam. Suspendisse id feugiat arcu. Nullam ut gravida, , euismod elit.
+		+e.tags
+			+e('span').tags__title Tags
+			+e('span').tags__keys Fashion, Beauty, Style, Podium
+
+		+e.author
+			+e.author__ava
+				img(src="http://i.pravatar.cc/100", alt="")
+			+e.author__info
+				+e.author__name Amber Scott
+				+e.author__desc Etiam euismod iaculis urna vel venenatis. Morbi rutrum commodo enim. Vivamus tincidunt leo vel arcu elnd euismodtis purus in, pulvinar tellus. Nec leo a nisl aliquam pretium ac.
+				+e.author__contacts
+					a.mail(href="mailto:test@example.com") amber@example.com
+
